@@ -6,13 +6,17 @@ root.title("Чат")
 root.maxsize(1000, 600)
 root.minsize(1000,600)
 
+frame_input_nick = Frame(root)
 
-label=Label(text="Представьтесь, пожалуйста", font="Times 20")
-label.place(x=400, y=230)
+label=Label(frame_input_nick, text="Представьтесь, пожалуйста", font="Times 20")
+label.pack(anchor=N)
 
-nick_entry = Entry(font="Times 20")
-nick_entry.place(x=400, y=260)
+nick_entry = Entry(frame_input_nick, font="Times 20")
+nick_entry.pack(anchor=N)
 
-set_nick_button = Button(text="Продолжить", font="Times 14", background="lime", command=lambda: set_nick(nick_entry.get()))
-set_nick_button.place(x=470, y=300)
+set_nick_button = Button(frame_input_nick, text="Продолжить", font="Times 14", background="lime", command=lambda: set_nick(nick_entry.get()))
+set_nick_button.pack(anchor=N)
+
+frame_input_nick.place(x=400, y=150)
+
 root.mainloop()
