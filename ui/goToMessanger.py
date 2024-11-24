@@ -1,7 +1,7 @@
 from tkinter import messagebox, Tk, Frame
 from widgets.GroupChatFrame import GroupChatFrame
 
-def set_nick(root: Tk, frame_input_nick: Frame, str_nick: str) -> None:
+def goToMessanger(root: Tk, frame_input_nick: Frame, str_nick: str) -> None:
     if len(str_nick) == 0:
         messagebox.showerror(message="Ник обязателен!")
         return
