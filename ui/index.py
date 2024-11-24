@@ -1,5 +1,4 @@
 from tkinter import *
-from set_nick import set_nick
 from widgets.InputNickFrame import InputNickFrame
 
 root = Tk()
