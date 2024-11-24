@@ -11,9 +11,9 @@ class InputNickFrame(Frame):
                 raise Exception("Может быть только один фрейм ввода ника!")
         except Exception as e:
             print(e)
-        # 
 
-        InputNickFrame.instance = super().__init__(window)
+        InputNickFrame.instance = super().__init__(window)    
+        # 
 
         self.label=Label(self, text="Представьтесь, пожалуйста", font="Times 20")
         self.label.pack(anchor="n")
