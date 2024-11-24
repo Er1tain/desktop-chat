@@ -1,5 +1,5 @@
 from tkinter import Tk, Frame, Label, Entry, Button
-from set_nick import set_nick
+from goToMessanger import goToMessanger
 
 class InputNickFrame(Frame):
     instance = ""
@@ -21,7 +21,7 @@ class InputNickFrame(Frame):
         self.nick_entry = Entry(self, font="Times 20")
         self.nick_entry.pack(anchor="n")
 
-        self.set_nick_button = Button(self, text="Продолжить", font="Times 14", background="lime", command=lambda: set_nick(window, self, self.nick_entry.get()))
+        self.set_nick_button = Button(self, text="Продолжить", font="Times 14", background="lime", command=lambda: goToMessanger(window, self, self.nick_entry.get()))
         self.set_nick_button.pack(anchor="n")
 
     def place(self, x: float, y: float):
